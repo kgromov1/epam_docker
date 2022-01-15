@@ -15,7 +15,7 @@ services:
     ports: 
       - 778:80
     volumes: 
-      - /mnt/docker_epam/share_data:/var/www/site_epam
+      - ./share_data:/var/www/site_epam
     networks: 
       - net_for_httpd
 
@@ -31,7 +31,7 @@ services:
     ports: 
        - 779:80 
     volumes: 
-       - /mnt/docker_epam/share_data:/var/www/site_epam
+       - ./share_data:/var/www/site_epam
     networks: 
        - net_for_nginx
 
